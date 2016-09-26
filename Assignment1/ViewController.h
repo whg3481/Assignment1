@@ -10,6 +10,12 @@
 
 @interface ViewController : UIViewController
 
+@property (nonatomic,weak) IBOutlet UITextField *firstnametextfield;
+@property (nonatomic,weak) IBOutlet UILabel *firstnamelabel;
+@property (nonatomic,weak) IBOutlet UITextField *lastnametextfield;
+@property (nonatomic,weak) IBOutlet UILabel *lastnamelabel;
+
+
 
 @end
 
