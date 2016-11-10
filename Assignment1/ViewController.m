@@ -14,7 +14,7 @@
 
 @implementation ViewController
 
-- (void)viewDidLoad {
+-(void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
 }
@@ -29,6 +29,9 @@
     NSString *firstName = self.firstnametextfield.text;
     NSString *lastName = self.lastnametextfield.text;
     NSString *welcomeMessage = [NSString stringWithFormat:@"%@ %@",firstName,lastName];
+    
+    // This is how to send a screen alert if something happens you want to notify the user to do something else or just a message like an Alert that's why they call it an Alert. Notice that it is inside the IBAction Brackets for submit if button pressed in the future I will probably only use this if an undesirable result is inputted.
+    
     UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Message" message:welcomeMessage preferredStyle:UIAlertControllerStyleAlert];
     
                                 [alert addAction:[UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
